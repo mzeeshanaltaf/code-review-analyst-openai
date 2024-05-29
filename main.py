@@ -33,6 +33,11 @@ st.sidebar.subheader("Programing Language")
 pro_language = st.sidebar.selectbox("Select the Programming Language", list(PROGRAMMING_LANG.keys()),
                                     disabled=not is_active)
 
+st.sidebar.divider()
+st.sidebar.subheader('About')
+st.sidebar.markdown(''' Any Queries: Contact [Zeeshan Altaf](zeeshan.altaf@gmail.com)''')
+st.sidebar.markdown(''' Source code: [GitHub](https://github.com/mzeeshanaltaf/code-review-analyst-openai)''')
+
 # *** MAIN PAGE Functionality ***
 
 st.subheader(f"Please upload the {pro_language} file:")
